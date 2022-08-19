@@ -1,0 +1,165 @@
+1
+
+public class Taskk1 {
+    public static void main(String[] args){
+        double n =3;
+        double m = 5;
+        System.out.println(multi(n,m));
+        System.out.println(plus(n,m));
+        System.out.println(minus(n,m));
+        System.out.println(minus1(n,m));
+        System.out.println(delenie(n,m));
+        System.out.println(modd(n,m));
+    }
+
+    private static double multi(double q, double w){
+        return q*w;
+    }
+
+    private static double plus(double q, double w){
+        return q+w;
+    }
+
+    private static double minus(double q, double w){
+        return q-w;
+    }
+
+    private static double minus1(double q, double w){
+        return w-q;
+    }
+
+    private static double delenie(double q, double w){
+        return q/w;
+    }
+
+    private static double modd(double q, double w){
+        return w%q;
+    }
+
+
+}
+
+
+
+2.
+public class Taskk1 {
+    public static void main(String[] args){
+        for(int i =0; i<=20; i++){
+            if(i%2==0){
+                continue;
+            }
+            else {
+                System.out.println(i);
+            }
+        }
+    }
+
+
+
+
+}
+
+
+3.
+
+public class Taskk1 {
+    public static void main(String[] args){
+
+        int a =2, b=3;
+
+       int temp = b;
+       b=a;
+       a=temp;
+
+        System.out.println(a+" "+b);
+    }
+
+
+
+
+}
+
+
+4.
+import java.util.Scanner;
+
+public class Taskk1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int num1 = scan.nextInt();
+        int num2 = scan.nextInt();
+
+        if(num>num1 && num>num2){
+            System.out.println(num);
+        }
+        else if(num1>num && num1>num2){
+            System.out.println(num1);
+        }
+        else if(num2>num && num2>num1){
+            System.out.println(num2);
+        }
+
+    }
+}
+
+5.
+
+import java.util.Scanner;
+
+public class Taskk1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+
+        if(num>0){
+            System.out.println("положительное");
+        }
+        else if(num<0){
+            System.out.println("отрицательное");
+        }
+
+    }
+}
+
+6.import java.util.Scanner;
+
+public class Taskk1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+str = str.replace('a', 'b');
+        System.out.println(str);
+
+
+    }
+}
+
+7.public class Taskk1 {
+    public static void main(String[] args) {
+       int [] m = {1,2,3,4,5};
+       int sum =0;
+       for(int i=0; i<=m.length; i++){
+           sum +=i;
+       }
+        System.out.println(sum);
+    }
+}
+
+8.public class Taskk1 {
+    public static void main(String[] args) {
+       int [] m = {5,7,6,4,2};
+       int vtoroe =m[0];
+       int n = m[0];
+       for(int i=0; i<m.length-1; i++){
+           if(m[i]<m[i+1]){
+               int temp = m[i+1];
+               m[i+1] = m[i];
+               m[i] = temp;
+           }
+
+       }
+
+        System.out.println(m[1]);
+    }
+}
